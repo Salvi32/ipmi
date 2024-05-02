@@ -3,6 +3,14 @@
 
 //  Variable para guardar la imagen
 PImage perro;
+ // variable Coordenadas y dimensiones para las patas
+  int pataAncho = 13; // Ancho de cada pata
+  int pataAlto = 50; // Alto de cada pata
+  int espacioEntrePatas = 43; // Espacio entre las patas
+  
+  // variables Posiciones para las patas
+  int xInicial = 560; // Coordenada X 
+  int yInicial = 220; // Coordenada Y para todas las patas
 
 void setup() {
   //  tamaño de ventana
@@ -40,15 +48,6 @@ void draw() {
   stroke(1);
   fill(160, 82, 45); // Color marrón para las patas del perro
   
-  // Coordenadas y dimensiones para las patas
-  int pataAncho = 13; // Ancho de cada pata
-  int pataAlto = 50; // Alto de cada pata
-  int espacioEntrePatas = 43; // Espacio entre las patas
-  
-  // Posiciones para las patas
-  int xInicial = 560; // Coordenada X 
-  int yInicial = 220; // Coordenada Y para todas las patas
-
   // patas delanteras
   rect(xInicial, yInicial, pataAncho, pataAlto);
   rect(xInicial + pataAncho + espacioEntrePatas, yInicial, pataAncho, pataAlto);
